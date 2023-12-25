@@ -11,6 +11,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.nameisjayant.jetpackcomposetutorialsyt.components.ToggleableModifierExample
+import com.nameisjayant.jetpackcomposetutorialsyt.components.WeightModifierExampleOne
+import com.nameisjayant.jetpackcomposetutorialsyt.components.WeightModifierExampleThree
+import com.nameisjayant.jetpackcomposetutorialsyt.components.WeightModifierExampleTwo
 import com.nameisjayant.jetpackcomposetutorialsyt.ui.theme.JetpackComposeTutorialsYtTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +21,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetpackComposeTutorialsYtTheme {
-                ToggleableModifierExample()
+                WeightModifierExampleThree()
             }
         }
     }
