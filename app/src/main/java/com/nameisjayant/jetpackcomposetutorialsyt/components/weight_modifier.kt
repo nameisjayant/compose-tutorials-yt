@@ -25,16 +25,16 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun WeightModifierExampleOne() {
 
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Row(
             modifier = Modifier.fillMaxWidth(),
+            // horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
-                text = "jkjkfkllf",
-                modifier = Modifier.weight(1f, true)
+                text = "Hello bjhdd jkjkdd nnjknd njndd nnnnnd njddj nnnd n",
+                modifier = Modifier.weight(
+                    1f
+                )
             )
             Spacer(
                 modifier = Modifier
@@ -43,22 +43,24 @@ fun WeightModifierExampleOne() {
             )
         }
     }
+
 }
 
 @Composable
 fun WeightModifierExampleTwo() {
 
-    // weight -> 0.1 to 1
-    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+    Box(
+        modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center
+    ) {
         Row(
             modifier = Modifier.fillMaxWidth()
         ) {
             Button(
                 onClick = {}, modifier = Modifier
                     .fillMaxWidth()
-                    .weight(0.3f)
+                    .weight(0.5f)
             ) {
-                Text(text = "Button One")
+                Text(text = "Button one")
             }
             Spacer(modifier = Modifier.width(10.dp))
             Button(
@@ -66,7 +68,7 @@ fun WeightModifierExampleTwo() {
                     .fillMaxWidth()
                     .weight(0.5f)
             ) {
-                Text(text = "Button Two")
+                Text(text = "Button two")
             }
         }
     }
@@ -76,20 +78,20 @@ fun WeightModifierExampleTwo() {
 @Composable
 fun WeightModifierExampleThree() {
 
-    Column {
+    Column(
+        modifier = Modifier.fillMaxSize()
+    ) {
         LazyColumn(
             modifier = Modifier.weight(1f)
         ) {
-            items(100) {
+            items(50) {
                 Text(text = "Text $it", modifier = Modifier.padding(10.dp))
             }
         }
 
-        Button(onClick = {}, modifier = Modifier
-            .fillMaxWidth()
-            .padding(20.dp)) {
-            Text(text = "Submit")
+        Button(onClick = {}, modifier = Modifier.padding(20.dp).fillMaxWidth()) {
+            Text(text = "Get Started")
         }
-    }
 
+    }
 }
