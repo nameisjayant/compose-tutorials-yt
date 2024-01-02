@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.nameisjayant.jetpackcomposetutorialsyt.components.BaselinePadding
 import com.nameisjayant.jetpackcomposetutorialsyt.components.IntrinsicMeasurementExample
+import com.nameisjayant.jetpackcomposetutorialsyt.components.MultiHeaderWithLazyColumn
 import com.nameisjayant.jetpackcomposetutorialsyt.components.PaddingValuesExample
 import com.nameisjayant.jetpackcomposetutorialsyt.components.WeightModifierExampleOne
 import com.nameisjayant.jetpackcomposetutorialsyt.components.WeightModifierExampleThree
@@ -16,7 +17,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetpackComposeTutorialsYtTheme {
-                BaselinePadding()
+                MultiHeaderWithLazyColumn()
             }
         }
     }
